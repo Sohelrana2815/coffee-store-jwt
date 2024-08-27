@@ -6,11 +6,13 @@
  * 4. create token in backend jwt.sign(user,'secret',{expiresIn: '1h'})
  */
 
-
-
 /**
  * Cookie parser
  * 1. set cookie http only , secure : false (for development purpose)
  * 2. cors / middleware 
+ *  cors({
+    origin: ["http://localhost:5173"],
+    credentials: true,
+  })
  * 3. client site axios settings : with credential 
  */
